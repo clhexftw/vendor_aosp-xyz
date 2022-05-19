@@ -240,6 +240,7 @@ PRODUCT_PACKAGES += \
     FontPoppinsOverlay \
     FontWorkSansOverlay \
     FontSatoshiOverlay \
+	FontHarmonySansOverlay \
     FontSourceCodeProOverlay \
     AndroidBlackThemeOverlay \
     DocumentsUIOverlay \
