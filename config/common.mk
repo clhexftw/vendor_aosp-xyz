@@ -236,11 +236,21 @@ PRODUCT_PACKAGES += \
     IconPackVictorLauncherOverlay \
     IconPackVictorSettingsOverlay \
     IconPackVictorSystemUIOverlay \
+    FontCircularStdOverlay \
+    FontPoppinsOverlay \
+    FontWorkSansOverlay \
+    FontSatoshiOverlay \
+    FontSourceCodeProOverlay \
     AndroidBlackThemeOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay \
     ThemedIconsOverlay \
     NavigationBarNoHintOverlay
+
+# Fonts
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/product/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
+	$(call find-copy-subdir-files,*,vendor/aosp/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
 
 include vendor/aosp/config/version.mk
 
